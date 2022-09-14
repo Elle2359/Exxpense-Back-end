@@ -1,0 +1,76 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
+    title Expenses
+    |     
+    link(rel='stylesheet', href='expense.css')
+  body
+    div
+      header
+        h2 EXPENSE TRACKER
+        |             
+        ul
+          li
+            a#logout(href='#logout') Logout
+    |     
+    div
+      button#premium-membership Get Premium Membership
+    |        
+    |     
+    #expenses.expenses
+      #form.form
+        #expense-header
+          h3 Expenses
+          |                 
+          p Enter your expense
+        |         
+        |         
+        form#expense-form.expense-form
+          input#amount(type='number', placeholder='Amount', required='')
+          |             
+          input#description(type='text', placeholder='Description', required='')
+          // <label for="catageory">Choose a catageory</label>
+          select#catageory(name='catageory')
+            option(value='') Choose a catageory
+            |                 
+            option(value='movies') Movies
+            |                 
+            option(value='Food') Food
+            |                 
+            option(value='others') Others
+          |             
+          button Add Expense
+        |         
+        button#get-expense.get-expense Get All Expenses 
+      |     
+      
+      #expense-list.expense-list
+        ul#listOfExpenses
+        |         
+        section.pagination
+          label(for='rows') No of Rows:
+          |               
+          select#rows(name='rows')
+            option(value='1') 1
+            |                 
+            option(value='2', selected='') 2 
+            |                 
+            option(value='3') 3
+            |                 
+            option(value='5') 5
+          |             
+          #pagination-button
+            // <button class="pbutton"id="page1" >1</button>
+            // <button class="pbutton"id="page2">2</button>
+    |     
+    script(src='https://checkout.razorpay.com/v1/checkout.js',crossorigin='anonymous')
+    |     
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js')
+    |     
+    script(src='expense.js')

@@ -1,0 +1,253 @@
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-style: dotted;
+  border-width: thick;
+  /* padding-bottom: 5%; */
+}
+
+header h2{
+  text-align: center;
+    font-family:"Poppins",sans-serif;
+    padding:20px;
+    font-size:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+}
+header .header{
+    background-color: #fff;
+    height: 45px;
+  }
+
+  header a{
+    background-color: #75d2e2;
+    font-size: 25px;
+    position: absolute;
+    top: 50;
+    right: 10px;
+  }
+  a:hover { color: #f03737; }
+
+  /* header a img{
+    width: 134px;
+  margin-top: 4px;
+  } */
+  .expenses{
+    padding-top: 5%;
+  }
+  .expense-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+  }
+  .expense-page .form .expense{
+    margin-top: -31px;
+  margin-bottom: 26px;
+  }
+
+  .form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  .form input  {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #328f8a;
+    background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    margin-bottom: 15px;
+
+  }
+
+  .form select  {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+ 
+
+
+  ul {
+    counter-reset: index;  
+    padding: 0;
+    /* max-width: 1000px; */
+  }
+  
+  /* List element */
+  .expense-list li {
+    counter-increment: index; 
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(45deg,rgb(211, 212, 182),#ddd2eb);
+    color: #e95c8b;
+    font-family: cursive;
+    
+  }
+
+  
+  
+  #delete {
+    position: relative;
+   top:80px;
+   right: 50px;
+      font-family: "Roboto", sans-serif;
+      text-transform: uppercase;
+      outline: 0;
+      background-color: #2088d2;
+      background-image: linear-gradient(45deg,#d99897,#c64c4a);
+      width: 10%;
+      border: 0;
+      padding: 15px;
+      color: #FFFFFF;
+      /* border:2px solid red; */
+      font-size: 15px;
+      -webkit-transition: all 0.3 ease;
+      transition: all 0.3 ease;
+      cursor: pointer;
+      margin-bottom: 15px;
+
+  }
+
+  #delete button:hover{
+    color: red;
+    background-image: linear-gradient(45deg,#cee3e2,#32e7e7);
+  }
+  
+  /* Element counter */
+   /*li::before {
+    content: counters(index, ".", decimal-leading-zero);
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: bold;
+    min-width: 50px;
+    padding-right: 12px;
+    font-variant-numeric: tabular-nums;
+    align-self: flex-start;
+    background-image: linear-gradient(to bottom, aquamarine, orangered);
+    background-attachment: fixed;
+   
+    -webkit-text-fill-color: transparent;
+  }
+  */ 
+  
+  /* Element separation */
+  li + li {
+    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+ 
+  body {
+    background-image: url(https://greatperformersacademy.com/images/images/Articles_images/Saving-money-not-feeling-deprived.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -ms-overflow-style: none;
+    scrollbar-width: 5px;
+    scroll-behavior: smooth,initial,inherit;
+    animation: gradient 20s ease infinite;
+    height: 100vh;
+  }
+  body::-webkit-scrollbar {
+    display: 5px;
+  }
+  /* width */
+
+
+  #premium-membership {
+    position: relative;
+    top: 20px;
+    left: 770px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background-color: #328f8a;
+    background-image: linear-gradient(45deg,#25cc25,#8dd6ac);
+    width: 25%;
+    border: 0;
+    padding: 15px;
+    /* color: rgb(104, 91, 223); */
+    font-family: Arial ;
+    color: rgb(244, 201, 9);
+    font-size: 19px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+
+  .expenses button:hover{
+    background-image: linear-gradient(45deg,#cee3e2,#32e7e7);
+    color:black;
+
+  }
+
+  .expense-list{
+    display: none;
+  }
+
+  .pagination {
+    text-align: center;
+    padding: 2rem;
+}
+
+.pagination button{
+    cursor:pointer;
+    padding:10px;
+    color:white;
+    border:none;
+    margin: 0 0.1rem;
+    font-size:15px;
+    font-weight: bold;
+    border-radius: 4%;
+    background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+}
+
+#pagination-button  button:hover{
+  background-image: linear-gradient(45deg,#cee3e2,#32e7e7);
+  color:black;}

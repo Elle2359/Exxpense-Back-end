@@ -1,0 +1,46 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
+    title Sign-up
+    |     
+    link(rel='stylesheet', href='signup.css')
+  body
+    div
+      header
+        h2 EXPENSE TRACKER
+    |     
+    |     
+    |     
+    .signup-page
+      .form
+        .signup
+          .signup-header
+            h3 SIGNUP
+            |               
+            p Please enter your credentials to signup.
+        |           
+        form#signup-form.signup-form
+          input#name(type='text', placeholder='name', required='')
+          |             
+          input#email(type='text', placeholder='email', required='')
+          |             
+          input#phone(type='number', placeholder='phone', required='')
+          |             
+          input#password(type='password', placeholder='password', required='')
+          |             
+          button Signup
+          |             
+          p.message
+            | Already registerd? 
+            a(href='./login') Login
+        // Toggle notification
+        #container
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js')
+    |     
+    script(src='signup.js')

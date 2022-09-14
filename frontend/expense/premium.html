@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses</title>
+    <link rel="stylesheet" href="premium.css">
+</head>
+<body>
+    <div>
+        <header>
+            <h2>EXPENSE TRACKER</h2>
+            <ul>
+                <li><a href="#logout" id="logout">LOG-OUT</a></li> 
+            </ul>
+        </header>
+    </div>
+    <div>
+        <button id="premium-membership">Get Premium Membership</button>
+    </div>
+      
+  
+        <a href="./report.html" class="report-holder">EXPENSE REPORT</a>
+        <section id="leaderboard" class="container">
+        
+            <h2>LEADERBOARD</h2>
+            <button class="cancel">X</button>
+            <div class="leaderboard-row leaderboard-header">
+                <span class='leaderboard-number leaderboard-column'>RANK</span>
+                <span class='leaderboard-name leaderboard-column'>NAME</span>
+                <span class='leaderboard-expense leaderboard-column'>TOTAL EXPENSE</span>
+            </div>
+              <div class='leaderboard-items'>
+        
+            </div>
+            
+        </section>
+    <div id="expenses" class="expenses">
+
+        <div class="form" id="form">
+            <div id="expense-header">
+                <h3>Expenses</h3>
+                <p>Enter your expense</p>
+            </div>
+        
+        <form class="expense-form" id="expense-form">
+            <input type="number" placeholder="Amount" id="amount" required/>
+            <input type="text" placeholder="Description" id="description" required/>
+            <!-- <label for="catageory">Choose a catageory</label> -->
+            <select name="catageory" id="catageory">
+                <option value="">Choose a catageory</option>
+                <option value="movies">Movies</option>
+                <option value="Food">Food</option>
+                <option value="others">Others</option>
+            </select>
+            <button>Add Expense</button>
+        </form>
+        <button id="get-expense" class="get-expense">Get Previous Expense</button>
+
+    </div>
+    
+    <div id="expense-list" class="expense-list">
+        <ul id="listOfExpenses"></ul>
+
+        <section class="pagination">
+            <label for="rows">No of Rows:</label>
+              <select name="rows" id="rows">
+                <option value=1>1</option>
+                <option value=2 selected>2 </option>
+                <option value=3>3</option>
+                <option value=5>5</option>
+            </select>
+        <div id="pagination-button">
+                <!-- <button class="pbutton"id="page1" >1</button> -->
+                
+        </div>
+            
+        
+        </section>
+
+    </div>
+    <div id="board" class="board">
+    <a href="#leaderboard-holder" class="leaderboard-holder">LEADERBOARD</a>
+    
+<!-- LEADERBOARD -->
+
+   
+</div>
+
+
+    </div>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="expense.js"></script>
+</body>
+</html>

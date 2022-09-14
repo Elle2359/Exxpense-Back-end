@@ -1,0 +1,51 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
+    title Login
+    |     
+    link(rel='stylesheet', href='login.css')
+  body
+    div
+      header
+        h2 EXPENSE TRACKER
+    |   
+    |     
+    .login-page
+      #form.form
+        .login
+          .login-header
+            h3 LOGIN
+        |         
+        form#login-form.login-form
+          p Please enter your credentials to login.
+          |           
+          input#email(type='text', placeholder='email', required='')
+          |           
+          input#password(type='password', placeholder='password', required='')
+          |           
+          button#login-button.login-button login
+          // <p class="message">Forgot Password <button id="forgot-password" class="forgot-password">Click Here</button></p>
+          p.message
+            | Forgot Password 
+            a#forgot-password.forgot-password(href='#forgot') Click Here
+          |           
+          p.message
+            | Not registered? 
+            a(href='./signup') Create an account
+        |         
+        form#forgot.forgot
+          p Please enter your email to reset Password.
+          |           
+          input#reset-email(type='text', placeholder='email', required='')
+          |           
+          |           
+          button#reset.reset Submit
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js')
+    |     
+    script(src='login.js')

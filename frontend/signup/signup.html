@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div>
+      <header>
+          <h2>EXPENSE TRACKER</h2>
+      </header>
+  </div>
+    
+    
+    <div class="signup-page">
+        <div class="form">
+          <div class="signup">
+            <div class="signup-header">
+              <h3>SIGNUP</h3>
+              <p>Please enter your credentials to signup.</p>
+            </div>
+          </div>
+          <form class="signup-form" id="signup-form">
+            <input type="text" placeholder="name" id="name" required/>
+            <input type="text" placeholder="email" id="email" required/>
+            <input type="number" placeholder="phone" id="phone" required/>
+            <input type="password" placeholder="password" id="password" required/>
+            <button>Signup</button>
+            <p class="message">Already registerd? <a href="../login/login.html">Login</a></p>
+          </form>
+                <!-- Toggle notification -->
+    <div id="container"></div>
+        </div>
+      </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>

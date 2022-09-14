@@ -1,0 +1,64 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    |     
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    |     
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    |     
+    title Report
+    |     
+    link(rel='stylesheet', href='report.css')
+  body
+    div
+      header
+        h2 EXPENSE TRACKER
+    |   
+    |     
+    h2 Day To Day Expenses
+    |     
+    h2#year Year
+    |       
+    .day-to-day-report
+    |       
+    h3#month
+    |        
+    table#daily
+      tbody
+        tr
+          th Date
+          |             
+          th Description
+          |             
+          th Catageory
+          |             
+          th Income
+          |             
+          th Expense
+    //
+      <div class="yearly-report">
+      <h3>Yearly Report</h3>
+      <table>
+      <th>Month</th>
+      <th>Income</th>
+      <th>Expense</th>
+      <th>Savings</th>
+      </table>
+      </div>
+      <div class="notes">
+      <h3>Notes Report</h3>
+      <table >
+      <th>Date</th>
+      <th>Notes</th>
+      </table>
+      </div>
+    button#prev-downloads Get Previous Downloads
+    |     
+    button#download.download Download
+    |     
+    ul#list-of-files
+    |     
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js')
+    |     
+    script(src='report.js')
